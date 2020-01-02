@@ -16,11 +16,11 @@ while True:
              
              #Check number of seats
              num_seats = films[choice][1]
-             num_tickets = int(input("How many tickets would you like?: ").strip())
+             num_tix = int(input("How many tickets would you like?: ").strip())
              
-             if num_seats >0 and num_tickets <= num_seats:
+             if num_seats >0 and num_tix <= num_seats:
                  print("Enjoy the film!")
-                 films[choice][1] = films[choice][1]-1
+                 films[choice][1] = films[choice][1]-num_tix
              else:
                  print("Sorry, we are sold out!")
          
